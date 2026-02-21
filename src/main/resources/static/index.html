@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian State Information</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Indian State Information System</h1>
+    <p class="subtitle">Select a state to view detailed information</p>
+
+    <select id="stateSelect" onchange="getStateInfo()">
+        <option value="">-- Select State --</option>
+    </select>
+
+    <div id="stateCard" class="card hidden">
+        <h2 id="stateName"></h2>
+        <div class="info-grid">
+            <div><span>Capital</span><p id="capital"></p></div>
+            <div><span>Population</span><p id="population"></p></div>
+            <div><span>Area (km²)</span><p id="area"></p></div>
+            <div><span>Literacy Rate (%)</span><p id="literacy"></p></div>
+            <div><span>Language</span><p id="language"></p></div>
+        </div>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>
